@@ -93,3 +93,13 @@ function inputTextColor(e){
         }
     }
 }
+
+// Background Image
+var backgroundImageWrapper = document.getElementById('header-image');
+
+function backgroundImage(e){
+    var overrideValue = e.value;
+    var codeTarget = document.getElementById('code-input-bg-image');
+    codeTarget.innerHTML = '"' + overrideValue + ',"';
+    backgroundImageWrapper.style.backgroundImage = "url('"+ overrideValue +"')";
+}

@@ -47,13 +47,19 @@
                 <label>Input text color</label>
                 <input type="text" value="19212C" onchange="inputTextColor(this)" />
             </div>
+            <div class="separator"></div>
+            <div class="body bold m-b-12">Background settings</div>
+            <div class="input-wrapper">
+                <label>Background URL</label>
+                <input type="text" value="https://media.istockphoto.com/photos/clear-night-sky-with-milky-way-and-huge-amount-of-stars-picture-id1287456867?b=1&k=20&m=1287456867&s=170667a&w=0&h=k_ldypib_aEeLD71QVzSS5kBV9QI-INb5k684DVEZ94=" onchange="backgroundImage(this)" />
+            </div>
         </div>
 
         <div class="editor-pane">
             <div class="phone-wrapper">
                 <div class="white-bg"></div>
                     <img width="375px" style="margin: -1px 0 0 -2px;" src="./assets/Status-Bar.png">
-                    <div class="header-image"></div>
+                    <div id="header-image" class="header-image"></div>
                     <div class="content-wrapper login">
                         <img src="./assets/epic-logo.png" id="logo">
                         <div class="form">
@@ -142,6 +148,11 @@
                 <div class="key-value-pair">
                     <span class="key">Input.TextColor: </span>
                     <span class="value" id="code-input-text-color">"19212C",</span>
+                </div>
+                <div class="section">// Background Image</div>
+                <div class="key-value-pair">
+                    <span class="key">BackgroundImageURL: </span>
+                    <span class="value" id="code-input-bg-image">"header-image",</span>
                 </div>
             </div>
         </div>
